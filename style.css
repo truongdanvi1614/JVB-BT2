@@ -200,9 +200,6 @@ body {
     display: block;
 }
 
-.scrolling {
-    overflow-y: scroll; 
-}
 .footer-actions {
     display: flex;
     justify-content: space-between;
