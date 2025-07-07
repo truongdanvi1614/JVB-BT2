@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="calendar-container" tabindex="0">
+        <div class="calendar-header">
+            <div class="current-date-toggle">
+                <span class="current-date">Monday, November 7</span>
+                <span id="display-mode-text"></span>
+                <button class="icon-down">
+                <i class="fas fa-chevron-down toggle-icon"></i> </button>
+            </div>
+        </div>
+        
+        <div class="calendar-month-view active-view scrolling">
+            <div class="calendar-body">
+                <div class="navigation">
+                    <span class="month-year-display">November 2022</span>
+                    <div class="nav-arrows">
+                        <i class="fa-solid fa-sort-up nav-up"></i>
+                        <i class="fa-solid fa-sort-down nav-down"></i>
+                    </div>
+                </div>
+                <div class="weekdays">
+                    <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+                </div>
+                <div class="calendar-days"></div>
+            </div>
+        </div>
+
+        <div class="calendar-year-view hidden-view scrolling">
+            <div class="calendar-body"> 
+                <div class="navigation">
+                    <span class="year-display"></span>
+                    <div class="nav-arrows">
+                        <i class="fa-solid fa-sort-up nav-up"></i>
+                        <i class="fa-solid fa-sort-down nav-down"></i>
+                    </div>
+                </div>
+                <div class="months-grid"></div>
+            </div>
+        </div>
+
+        <div class="calendar-decade-view hidden-view scrolling">
+            <div class="calendar-body">
+                <div class="navigation">
+                    <span class="decade-display"></span>
+                    <div class="nav-arrows">
+                        <i class="fa-solid fa-sort-up nav-up"></i>
+                        <i class="fa-solid fa-sort-down nav-down"></i>
+                    </div>
+                </div>
+                <div class="years-grid"></div>
+            </div>
+        </div>
+
+        <footer class="footer-actions">
+            <div class="time-control">
+                <button class="time-adjust-btn">-</button>
+                <span id="time-display">30 mins</span>
+                <button class="time-adjust-btn">+</button>
+            </div>
+            <button class="focus-btn"><i class="fas fa-play"></i> Focus</button>
+            <button class="end-btn" style="display: none;"><i class="fa-solid fa-stop"></i> End Session</button>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
